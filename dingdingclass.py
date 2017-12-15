@@ -11,7 +11,7 @@ class alarmhandler(object):
         self.url = "https://oapi.dingtalk.com/robot/send?access_token=80ab5cb49bb8b09ed1d5119289ea651461546b7670caffb75a98e3384f81d007"
         self.headers = {"Content-Type": "application/json;charset: utf-8"}
         self.monitor_name = {'python'}  # 定义监控服务
-        self.monitor_map = {'python': 'python /data/deploy_flann/server.py &'}
+        self.monitor_map = {'python': 'python /data/deploy_flann/server.py &'}#定义服务启动脚本
         self.time_now = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time()))
         self.sendDate = None
 
