@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<framework>
+	<processers>
+		<processer file="lib64/A.so" name="AProcesser" path="/tmp">
+		</processer>
+		<processer age="6666666666666666666661" file="lib64/B.so" name="BProcesser">
+		<person age="15-------------" money="200000">this is the firest content</person></processer>
+		<processer age="6666666666666666666661" file="lib64/B.so2222222" name="BProcesser"><person age="15-------------" money="200000">this is the firest content</person></processer>
+
+		<services>
+			<service name="search" output_formatter="OutPutFormatter:service_inc" prefix="/bin/search?">
+
+				<chain sequency="chain2" />
+			</service>
+			<service name="update" prefix="/bin/update?">
+				<chain sequency="chain3" value="fordelete">new text</chain>
+			</service>
+		</services>
+	</processers>
+</framework>
